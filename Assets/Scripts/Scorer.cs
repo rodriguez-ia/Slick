@@ -9,7 +9,10 @@ public class Scorer : MonoBehaviour
     // Count the number of times the player has bumped into an object
     private void OnCollisionEnter(Collision other)
     {
-        hits++;
-        Debug.Log("You have bumped into an object " + hits + " times.");
+        if(other.gameObject.tag != "Hit")
+        {
+            hits++;
+            Debug.Log("You have bumped into an object " + hits + " times.");
+        }
     }
 }
