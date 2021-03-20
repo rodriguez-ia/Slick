@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Scorer : MonoBehaviour
 {
@@ -14,5 +15,14 @@ public class Scorer : MonoBehaviour
             hits++;
             Debug.Log("You have bumped into an object " + hits + " times.");
         }
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (hits > 5)
+         {
+             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+         }
     }
 }

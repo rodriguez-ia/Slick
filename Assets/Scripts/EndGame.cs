@@ -2,15 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ObjectHit : MonoBehaviour
+public class EndGame : MonoBehaviour
 {
-    // Detect when an object has collided with the player
     private void OnCollisionEnter(Collision other)
     {
         if(other.gameObject.tag == "Player")
         {
-            GetComponent<MeshRenderer>().material.color = Color.black;
-            this.gameObject.tag = "Hit";
+            Application.Quit();
         }
     }
 }

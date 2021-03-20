@@ -22,7 +22,7 @@ public class Dropper : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(isDropped == false && Time.time > timeUntilDrop)
+        if(isDropped == false && Time.timeSinceLevelLoad > timeUntilDrop)
         {
             mRenderer.enabled = true;
             rbody.useGravity = true;
