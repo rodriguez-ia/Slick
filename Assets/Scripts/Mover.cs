@@ -4,17 +4,21 @@ using UnityEngine;
 
 public class Mover : MonoBehaviour
 {
-    // These variables change our movement speed
-    float xValue;
-    float yValue = 0f;
-    float zValue;
+    // Rigidbody for our player
+    Rigidbody rbody;
 
-    float movementSpeed = 10f;
+    // These variables change our movement speed - when using transform.Translate();
+    // float xValue;
+    // float yValue = 0f;
+    // float zValue;
+
+    float movementSpeed = 1000f;
 
     // Start is called before the first frame update
     void Start()
     {
         PrintInstructions();
+        rbody = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -31,11 +35,29 @@ public class Mover : MonoBehaviour
         Debug.Log("Be careful not to hit the walls or any obstacles!!");
     }
 
-    // Receives input from keyboard to register player movement
+    // Receives Input from keyboard to register player movement
     void MovePlayer()
     {
-        xValue = Input.GetAxis("Horizontal") * Time.deltaTime * movementSpeed;
-        zValue = Input.GetAxis("Vertical") * Time.deltaTime * movementSpeed;
-        transform.Translate(xValue, yValue, zValue);
+        // Using transform.Translate() -> had issues when colliding with other objects
+        // xValue = Input.GetAxis("Horizontal") * Time.deltaTime * movementSpeed;
+        // zValue = Input.GetAxis("Vertical") * Time.deltaTime * movementSpeed;
+        // transform.Translate(xValue, yValue, zValue);
+
+        if(Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
+        {
+            rbody.AddForce(Vector3.forward * Time.deltaTime * movementSpeed);
+        }
+        if(Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
+        {
+            rbody.AddForce(Vector3.left * Time.deltaTime * movementSpeed);
+        }
+        if(Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
+        {
+            rbody.AddForce(Vector3.back * Time.deltaTime * movementSpeed);
+        }
+        if(Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
+        {
+            rbody.AddForce(Vector3.right * Time.deltaTime * movementSpeed);
+        }
     }
 }

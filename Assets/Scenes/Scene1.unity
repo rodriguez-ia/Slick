@@ -238,6 +238,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1990094198}
     m_Modifications:
+    - target: {fileID: 6267958054729017465, guid: 37e1e89cdb70a584b8d71028522e25c7, type: 3}
+      propertyPath: rotateSpeed
+      value: 430
+      objectReference: {fileID: 0}
     - target: {fileID: 6267958054729017467, guid: 37e1e89cdb70a584b8d71028522e25c7, type: 3}
       propertyPath: m_Name
       value: Spinner (7)
@@ -742,10 +746,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dropper
       objectReference: {fileID: 0}
-    - target: {fileID: 121914552711442975, guid: 8610bd35723e7d3498f80c9626bac601, type: 3}
-      propertyPath: timeUntilDrop
-      value: 3
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8610bd35723e7d3498f80c9626bac601, type: 3}
 --- !u!4 &256860433 stripped
@@ -1097,6 +1097,10 @@ PrefabInstance:
     - target: {fileID: 6267958054729017465, guid: 37e1e89cdb70a584b8d71028522e25c7, type: 3}
       propertyPath: yValue
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6267958054729017465, guid: 37e1e89cdb70a584b8d71028522e25c7, type: 3}
+      propertyPath: rotateSpeed
+      value: 430
       objectReference: {fileID: 0}
     - target: {fileID: 6267958054729017467, guid: 37e1e89cdb70a584b8d71028522e25c7, type: 3}
       propertyPath: m_Name
@@ -1746,6 +1750,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1990094198}
     m_Modifications:
+    - target: {fileID: 6267958054729017465, guid: 37e1e89cdb70a584b8d71028522e25c7, type: 3}
+      propertyPath: rotateSpeed
+      value: 430
+      objectReference: {fileID: 0}
     - target: {fileID: 6267958054729017467, guid: 37e1e89cdb70a584b8d71028522e25c7, type: 3}
       propertyPath: m_Name
       value: Spinner (6)
@@ -2234,6 +2242,10 @@ PrefabInstance:
       propertyPath: yValue
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 6267958054729017465, guid: 37e1e89cdb70a584b8d71028522e25c7, type: 3}
+      propertyPath: rotateSpeed
+      value: 430
+      objectReference: {fileID: 0}
     - target: {fileID: 6267958054729017467, guid: 37e1e89cdb70a584b8d71028522e25c7, type: 3}
       propertyPath: m_Name
       value: Spinner (8)
@@ -2473,6 +2485,10 @@ PrefabInstance:
       propertyPath: yValue
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 6267958054729017465, guid: 37e1e89cdb70a584b8d71028522e25c7, type: 3}
+      propertyPath: rotateSpeed
+      value: 300
+      objectReference: {fileID: 0}
     - target: {fileID: 6267958054729017467, guid: 37e1e89cdb70a584b8d71028522e25c7, type: 3}
       propertyPath: m_Name
       value: Spinner (5)
@@ -2482,8 +2498,12 @@ PrefabInstance:
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6267958054729017469, guid: 37e1e89cdb70a584b8d71028522e25c7, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 4.724542
+      objectReference: {fileID: 0}
+    - target: {fileID: 6267958054729017469, guid: 37e1e89cdb70a584b8d71028522e25c7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -13.25106
+      value: -13.172
       objectReference: {fileID: 0}
     - target: {fileID: 6267958054729017469, guid: 37e1e89cdb70a584b8d71028522e25c7, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3113,6 +3133,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1990094198}
     m_Modifications:
+    - target: {fileID: 6267958054729017465, guid: 37e1e89cdb70a584b8d71028522e25c7, type: 3}
+      propertyPath: rotateSpeed
+      value: 430
+      objectReference: {fileID: 0}
     - target: {fileID: 6267958054729017467, guid: 37e1e89cdb70a584b8d71028522e25c7, type: 3}
       propertyPath: m_Name
       value: Spinner (1)
@@ -3475,10 +3499,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 91444017}
     m_Modifications:
-    - target: {fileID: 3974058580301114775, guid: 69dac0871f8111846bbe434f2fbea2a6, type: 3}
-      propertyPath: timeUntilDrop
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5802002046813545581, guid: 69dac0871f8111846bbe434f2fbea2a6, type: 3}
       propertyPath: m_Name
       value: Roller
@@ -3526,14 +3546,6 @@ PrefabInstance:
     - target: {fileID: 6949899351141619337, guid: 69dac0871f8111846bbe434f2fbea2a6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7195964248819241433, guid: 69dac0871f8111846bbe434f2fbea2a6, type: 3}
-      propertyPath: m_Mass
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 7195964248819241433, guid: 69dac0871f8111846bbe434f2fbea2a6, type: 3}
-      propertyPath: m_AngularDrag
-      value: 0.01
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 69dac0871f8111846bbe434f2fbea2a6, type: 3}
@@ -3898,6 +3910,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1990094198}
     m_Modifications:
+    - target: {fileID: 6267958054729017465, guid: 37e1e89cdb70a584b8d71028522e25c7, type: 3}
+      propertyPath: rotateSpeed
+      value: 300
+      objectReference: {fileID: 0}
     - target: {fileID: 6267958054729017467, guid: 37e1e89cdb70a584b8d71028522e25c7, type: 3}
       propertyPath: m_Name
       value: Spinner (3)
@@ -3907,8 +3923,12 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6267958054729017469, guid: 37e1e89cdb70a584b8d71028522e25c7, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 4.724542
+      objectReference: {fileID: 0}
+    - target: {fileID: 6267958054729017469, guid: 37e1e89cdb70a584b8d71028522e25c7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -13.24865
+      value: -13.17
       objectReference: {fileID: 0}
     - target: {fileID: 6267958054729017469, guid: 37e1e89cdb70a584b8d71028522e25c7, type: 3}
       propertyPath: m_LocalPosition.y
@@ -5209,6 +5229,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1990094198}
     m_Modifications:
+    - target: {fileID: 6267958054729017465, guid: 37e1e89cdb70a584b8d71028522e25c7, type: 3}
+      propertyPath: rotateSpeed
+      value: 300
+      objectReference: {fileID: 0}
     - target: {fileID: 6267958054729017467, guid: 37e1e89cdb70a584b8d71028522e25c7, type: 3}
       propertyPath: m_Name
       value: Spinner (4)
@@ -5218,8 +5242,12 @@ PrefabInstance:
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6267958054729017469, guid: 37e1e89cdb70a584b8d71028522e25c7, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 4.724542
+      objectReference: {fileID: 0}
+    - target: {fileID: 6267958054729017469, guid: 37e1e89cdb70a584b8d71028522e25c7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -13.188363
+      value: -13.102
       objectReference: {fileID: 0}
     - target: {fileID: 6267958054729017469, guid: 37e1e89cdb70a584b8d71028522e25c7, type: 3}
       propertyPath: m_LocalPosition.y
